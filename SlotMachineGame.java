@@ -34,7 +34,7 @@ public class SlotMachineGame extends AbstractGame {
         while (isRunning && player.getBalance() > 0) {
             playRound();
             if (player.getBalance() <= 0) {
-                System.out.println("残高がなくないのでゲームオーバーです。");
+                System.out.println("残高がないのでゲームオーバーです。");
                 end();
             }
         }
@@ -42,7 +42,7 @@ public class SlotMachineGame extends AbstractGame {
 
     private void displayIntro() {
         System.out.println("スロットゲーム");
-        System.out.println("各リールには果物または7️⃣のシンボルがあります。");
+        System.out.println("各リールには果物または'7️⃣'のシンボルがあります。");
         System.out.println("ジャックポットは'7️⃣ 7️⃣ 7️⃣'です!");
         System.out.println("初期残高は " + player.getBalance() + " です。");
     }

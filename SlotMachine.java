@@ -8,7 +8,7 @@
 public class SlotMachine {
     public static void main(String[] args) {
         Player player = new Player(1000); 
-        SlotMachineGame game = new SlotMachineGame(player);
+        Game game = new SlotMachineGame(player);
         game.start();
     }
 }
